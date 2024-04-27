@@ -5,6 +5,7 @@
 }
 .container{
     width: 1440px;
+    margin:0 auto;
 }
 .container .hero{
     background-image: url("images/hero_bg.png");
