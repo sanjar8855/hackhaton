@@ -30,7 +30,7 @@ a{
     text-decoration: none;
 }
 .container{
-    /* width: 1440px; */
+    width: 1440px;
     margin:0 auto;
 }
 .container .row{
@@ -90,7 +90,7 @@ header .header__login a{
     font-weight: 700;
     text-transform: uppercase;
     margin-top:80px;
-    color:#373737;
+    color:#fff;
 }
 .hero__title span{
     color:#8CE25A;
@@ -101,16 +101,14 @@ header .header__login a{
 }
 .hero__img img{
     margin-bottom:5px;
-    width: 100%;
-    height: 100%;
+    width: 1150px;
     border:5px solid #212121;
     border-radius: 10px;
     position: relative;
     z-index: 5;
 }
 .hero__img .hero__left__radius{
-    width: 300px;
-    /* width: 17%; */
+    width: 135px;
     height: 135px;
     background-color: #ffffff;
     border-top-right-radius: 45px;
@@ -131,8 +129,7 @@ header .header__login a{
     border-bottom-left-radius: 20px;
 }
 .hero__img .hero__right__radius{
-    width: 300px;
-    /* width: 17%; */
+    width: 135px;
     height: 135px;
     background-color: #ffffff;
     border-top-left-radius: 45px;
