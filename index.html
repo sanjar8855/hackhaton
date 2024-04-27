@@ -22,12 +22,12 @@
                     </div>
                     <nav class="header__nav">
                         <ul>
-                            <li><a href="index.html" class="active">Bosh sahifa</a></li>
-                            <li><a href="works.html">Amaliy ishlar</a></li>
-                            <li><a href="mentors.html">Mentorlar</a></li>
-                            <li><a href="#">Maqolalar</a></li>
-                            <li><a href="#">Kurslar</a></li>
-                            <li><a href="#">Tadbirlar</a></li>
+                            <li><a href="#" class="active">Bosh sahifa</a></li>
+                            <li><a href="#" onclick="document.querySelector('.works').scrollIntoView({behavior: 'smooth'})">Amaliy ishlar</a></li>
+                            <li><a href="#" onclick="document.querySelector('.mentors').scrollIntoView({behavior: 'smooth'})">Mentorlar</a></li>
+                            <li><a href="#" onclick="document.querySelector('.maqola').scrollIntoView({behavior: 'smooth'})">Maqolalar</a></li>
+                            <li><a href="#" onclick="document.querySelector('.event').scrollIntoView({behavior: 'smooth'})">Tadbirlar</a></li>
+                            <li><a href="#" onclick="document.querySelector('.courses').scrollIntoView({behavior: 'smooth'})">Kurslar</a></li>
                         </ul>
                     </nav>
                     <div class="header__login">
@@ -320,6 +320,11 @@
         <!-- end footer -->
     </div>
 
+    <div>
+        <a href="#" class="scroll-up">
+            <img src="images/only_kaktus.png" alt="">
+        </a>
+    </div>
 
 
     <script src="js/app.js"></script>

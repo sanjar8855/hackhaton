@@ -485,3 +485,10 @@ footer{
     font-family: "Poppins600";
     color: #fff;
 }
+
+
+.scroll-up{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
