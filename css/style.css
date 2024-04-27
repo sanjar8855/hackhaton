@@ -156,7 +156,39 @@ header .header__login a{
 .works{
     height: 800px;
 }
-.mentors{}
+.works .works__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.works .works__cards .works__cards-card{
+    width: 540px;
+    border:1px solid #E4E4E4;
+    border-radius: 20px;
+    margin:20px;
+}
+.works .works__cards .works__cards-card .works__card__row{
+    margin:30px;
+    display:flex;
+    justify-content: space-between;
+}
+.works .works__cards .works__cards-card .works__card__row .works__card-icon{
+    width: 20%;
+}
+.works .works__cards .works__cards-card .works__card__row .works__card-text{
+    width: 73%;
+}
+.works .works__cards .works__cards-card .works__card__row .works__card-text .card__text-title{
+    font-family: "Poppins600";
+    font-size: 24px;
+    color:black;
+}
+.works .works__cards .works__cards-card .works__card__row .works__card-text .card__text-text{
+    font-family: "Poppins";
+    font-size: 18px;
+    color:black;
+}
 .mentors .mentors__card{
     padding:50px;
     background-color:black;
