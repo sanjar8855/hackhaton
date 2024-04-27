@@ -10,21 +10,13 @@
     font-family: "Poppins800";
     src: url("../fonts/Poppins/Poppins-Bold.ttf") format(truetype);
 }
-@font-face{
-    font-family: "Inter";
-    src: url("../fonts/Inter/Inter-Regular.ttf") format(truetype);
-}
-@font-face{
-    font-family: "Inter600";
-    src: url("../fonts/Inter/Inter-SemiBold.ttf") format(truetype);
-}
 
 *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    color: #ffffff;
     font-family: "Poppins";
+    transition: all .3s;
 }
 a{
     text-decoration: none;
@@ -50,6 +42,7 @@ header {
 header .header__logo a{
     display: flex;
     align-content: center;
+    color: #fff;
 }
 header .header__logo a span{
     line-height: 54px;
@@ -77,6 +70,7 @@ header .header__nav ul li .active{
 header .header__login a{
     display: block;
     line-height: 54px;
+    color: #fff;
     border:1px solid #ffffff;
     border-radius: 7px;
     width: 100px;
@@ -84,7 +78,7 @@ header .header__login a{
     font-family: "Poppins";
 }
 .hero__title{
-    font-family: 'Inter600';
+    font-family: 'Poppins600';
     font-size: 85px;
     line-height: 8rem;
     font-weight: 700;
@@ -167,6 +161,9 @@ header .header__login a{
     border-radius: 20px;
     margin:20px;
 }
+.works .works__cards .works__cards-card:hover{
+    background-color: #212121;
+}
 .works .works__cards .works__cards-card .works__card__row{
     margin:30px;
     display:flex;
@@ -174,6 +171,13 @@ header .header__login a{
 }
 .works .works__cards .works__cards-card .works__card__row .works__card-icon{
     width: 20%;
+}
+.works .works__cards .works__cards-card .works__card__row .works__card-icon i{
+    color:#E4E4E4;
+    font-size: 90px;
+}
+.works .works__cards .works__cards-card:hover .works__card__row .works__card-icon i{
+    color:#8CE25A;
 }
 .works .works__cards .works__cards-card .works__card__row .works__card-text{
     width: 73%;
@@ -183,10 +187,16 @@ header .header__login a{
     font-size: 24px;
     color:black;
 }
+.works .works__cards .works__cards-card:hover .works__card__row .works__card-text .card__text-title{
+    color:#fff;
+}
 .works .works__cards .works__cards-card .works__card__row .works__card-text .card__text-text{
     font-family: "Poppins";
     font-size: 18px;
     color:black;
+}
+.works .works__cards .works__cards-card:hover .works__card__row .works__card-text .card__text-text{
+    color:#fff;
 }
 .mentors__card{
     padding:50px;
@@ -208,10 +218,12 @@ header .header__login a{
     width: 50%;
 }
 .mentors__card .mentors__card__row .mentors__card-right .main-tittle{
+    color:#fff;
     font-family: "Poppins600";
     font-size: 35px;
 }
 .mentors__card .mentors__card__row .mentors__card-right .sub-tittle{
+    color:#fff;
     font-family: "Poppins";
     font-size: 18px;
 }
@@ -226,6 +238,7 @@ header .header__login a{
     font-size: 14.5px;
     line-height:2rem;
     margin-top:10px;
+    color:#fff;
 }
 .mentors__card .mentors__card__row .mentors__card-right .mentors__card-list ul li::before{
     content:url("../images/list-img.png");
@@ -237,7 +250,7 @@ header .header__login a{
     margin-top:20px;
 }
 .mentors__card .mentors__card__row .mentors__card-right .mentors__card-btn a{
-    font-family: "Inter";
+    font-family: "Poppins";
     padding:15px;
     color: #2A4A45;
     background-color: #8CE25A;
@@ -246,7 +259,7 @@ header .header__login a{
     margin-top:20px;
 }
 .author{
-    font-family: "Inter";
+    font-family: "Poppins";
     font-size: 15px;
     color:#969696;
     margin-top:20px;
