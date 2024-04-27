@@ -26,6 +26,7 @@ a{
 }
 .container .hero{
     background-image: url("../images/hero_bg.png");
+    position: relative;
 }
 .container .row header {
     padding-top:50px;
@@ -41,7 +42,8 @@ a{
     line-height: 54px;
     margin-left: 5px;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 35px;
+    font-family: "Poppins";
 }
 .container .row header .header__nav{
     line-height: 54px;
@@ -59,7 +61,8 @@ a{
     color:#ffffff;
     font-weight: 600;
 }
-.container .row header .header__login {
+.container .row header .header__login a{
+    display: block;
     line-height: 54px;
     border:1px solid #ffffff;
     border-radius: 7px;
@@ -79,10 +82,57 @@ a{
 .container .row .hero__title span{
     color:#8CE25A;
 }
-.container .row .hero__img img{
+.container .row .hero__img{
     margin-top:50px;
-    width: 100%;
+    text-align: center;
+}
+.container .row .hero__img img{
+    padding-bottom:5px;
+    width: 99%;
     border-radius: 10px;
+    position: relative;
+}
+.container .row .hero__img .hero__left__radius{
+    width: 135px;
+    height: 135px;
+    background-color: #ffffff;
+    border-top-right-radius: 45px;
+    position: absolute;
+    left:0px;
+    bottom:0px;
+}
+.container .row .hero__img .hero__left__radius::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right:-10px;
+    bottom:-4.8px;
+    background-color: #212121;
+    border-left:5px solid #ffffff;
+    border-bottom:5px solid #ffffff;
+    border-bottom-left-radius: 20px;
+}
+.container .row .hero__img .hero__right__radius{
+    width: 135px;
+    height: 135px;
+    background-color: #ffffff;
+    border-top-left-radius: 45px;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+}
+.container .row .hero__img .hero__right__radius::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left:-10px;
+    bottom:-4.8px;
+    background-color: #212121;
+    border-right:5px solid #ffffff;
+    border-bottom:5px solid #ffffff;
+    border-bottom-right-radius: 20px;
 }
 .container .works .row h1{
     color:black;
