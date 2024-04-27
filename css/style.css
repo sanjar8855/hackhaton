@@ -320,3 +320,30 @@ header .header__login a{
 .universal_card .card-body .active{
     background-color: #8CE25A;
 }
+.courses__cards{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.courses__card{
+    width: 360px;
+    box-shadow: 3px 3px 15px gray;
+    margin:20px 10px;
+    border-radius:10px;
+}
+.courses__card .card-img-top{
+    width: 100%;
+}
+.courses__card .card__body{
+    padding:10px 15px;
+    display: flex;
+    align-content: center;
+}
+.courses__card .card__body img{
+    flex-grow: 1;
+}
+.courses__card .card__body p{
+    margin-left:20px;
+    flex-grow: 12;
+    line-height: 40px;
+}
