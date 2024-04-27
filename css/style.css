@@ -287,6 +287,7 @@ header .header__login a{
 .universal_card .card-body .card-title{
     font-family: "Poppins600";
     font-size: 22px;
+    margin-top:5px;
 }
 .universal_card .card-body .card-text{
     margin-top:5px;
@@ -296,15 +297,26 @@ header .header__login a{
     margin-top:10px;
 }
 .universal_card .card-body .card-link{
+    font-family: "Poppins600";
     padding:10px 15px;
-    color: #3E721D;
-    border:1px solid #3E721D;
+    color: #8CE25A;
+    border:1px solid #8CE25A;
     border-radius:30px;
     font-size: 15px;
     margin-top:10px;
     display: inline-block;
 }
 .universal_card .card-body .card-link:hover{
-    background-color: #3E721D;
+    background-color: #8CE25A;
     color:#fff;
+}
+.universal_card .card-body .card-status{
+    padding:5px 15px;
+    border-radius:30px;
+    font-size: 15px;
+    display: inline-block;
+    border:1px solid #969696;
+}
+.universal_card .card-body .active{
+    background-color: #8CE25A;
 }
