@@ -3,8 +3,20 @@
     src: url("../fonts/Poppins/Poppins-Regular.ttf") format(truetype);
 }
 @font-face{
+    font-family: "Poppins600";
+    src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format(truetype);
+}
+@font-face{
+    font-family: "Poppins800";
+    src: url("../fonts/Poppins/Poppins-Bold.ttf") format(truetype);
+}
+@font-face{
     font-family: "Inter";
     src: url("../fonts/Inter/Inter-Regular.ttf") format(truetype);
+}
+@font-face{
+    font-family: "Inter600";
+    src: url("../fonts/Inter/Inter-SemiBold.ttf") format(truetype);
 }
 
 *{
@@ -12,6 +24,7 @@
     padding:0px;
     box-sizing: border-box;
     color: #ffffff;
+    font-family: "Poppins";
 }
 a{
     text-decoration: none;
@@ -24,44 +37,44 @@ a{
     width: 1160px;
     margin:0 auto;
 }
-.container .hero{
+.hero{
     background-image: url("../images/hero_bg.png");
     position: relative;
 }
-.container .row header {
+header {
     padding-top:50px;
     display: flex;
     justify-content: space-between;
     align-content: center;
 }
-.container .row header .header__logo a{
+header .header__logo a{
     display: flex;
     align-content: center;
 }
-.container .row header .header__logo a span{
+header .header__logo a span{
     line-height: 54px;
     margin-left: 5px;
     text-transform: uppercase;
     font-size: 35px;
     font-family: "Poppins";
 }
-.container .row header .header__nav{
+header .header__nav{
     line-height: 54px;
 }
-.container .row header .header__nav ul{
+header .header__nav ul{
     display: flex;
     list-style: none;
 }
-.container .row header .header__nav ul li a{
+header .header__nav ul li a{
     font-family: "Poppins";
     color:#89939E;
     margin-left:40px;
 }
-.container .row header .header__nav ul li .active{
+header .header__nav ul li .active{
     color:#ffffff;
     font-weight: 600;
 }
-.container .row header .header__login a{
+header .header__login a{
     display: block;
     line-height: 54px;
     border:1px solid #ffffff;
@@ -70,29 +83,29 @@ a{
     text-align: center;
     font-family: "Poppins";
 }
-.container .row .hero__title{
-    font-family: 'Inter';
-    font-size: 90px;
+.hero__title{
+    font-family: 'Inter600';
+    font-size: 85px;
     line-height: 8rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-top:80px;
     color:#373737;
 }
-.container .row .hero__title span{
+.hero__title span{
     color:#8CE25A;
 }
-.container .row .hero__img{
+.hero__img{
     margin-top:50px;
     text-align: center;
 }
-.container .row .hero__img img{
+.hero__img img{
     padding-bottom:5px;
     width: 99%;
     border-radius: 10px;
     position: relative;
 }
-.container .row .hero__img .hero__left__radius{
+.hero__img .hero__left__radius{
     width: 135px;
     height: 135px;
     background-color: #ffffff;
@@ -101,7 +114,7 @@ a{
     left:0px;
     bottom:0px;
 }
-.container .row .hero__img .hero__left__radius::after{
+.hero__img .hero__left__radius::after{
     content: "";
     width: 10px;
     height: 10px;
@@ -113,7 +126,7 @@ a{
     border-bottom:5px solid #ffffff;
     border-bottom-left-radius: 20px;
 }
-.container .row .hero__img .hero__right__radius{
+.hero__img .hero__right__radius{
     width: 135px;
     height: 135px;
     background-color: #ffffff;
@@ -122,7 +135,7 @@ a{
     right:0px;
     bottom:0px;
 }
-.container .row .hero__img .hero__right__radius::before{
+.hero__img .hero__right__radius::before{
     content: "";
     width: 10px;
     height: 10px;
@@ -134,6 +147,69 @@ a{
     border-bottom:5px solid #ffffff;
     border-bottom-right-radius: 20px;
 }
-.container .works .row h1{
+.content__tittles{
+    margin-top:50px;
+    font-family: "Poppins800";
+    font-size: 108px;
     color:black;
+}
+.works{
+    height: 800px;
+}
+.mentors{}
+.mentors .mentors__card{
+    padding:50px;
+    background-color:black;
+    border-radius:20px;
+}
+.mentors .mentors__card .mentors__card__row{
+    margin:0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-left{
+    width: 45%;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-left img{
+    width: 95%;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right{
+    width: 50%;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right .main-tittle{
+    font-family: "Poppins600";
+    font-size: 35px;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right .sub-tittle{
+    font-family: "Poppins";
+    font-size: 18px;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right .mentors__card-list{
+    margin-top:30px;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right .mentors__card-list ul{
+    list-style: none;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right .mentors__card-list ul li{
+    width: 80%;
+    font-size: 14.5px;
+    line-height:2rem;
+    margin-top:10px;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right .mentors__card-list ul li::before{
+    content:url("../images/list-img.png");
+    vertical-align: middle;
+    padding-top:10px;
+    margin-right:10px;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right .mentors__card-btn{
+    margin-top:20px;
+}
+.mentors .mentors__card .mentors__card__row .mentors__card-right .mentors__card-btn a{
+    font-family: "Inter";
+    padding:15px;
+    color: #2A4A45;
+    background-color: #8CE25A;
+    border-radius:30px;
+    font-size: 13px;
 }
