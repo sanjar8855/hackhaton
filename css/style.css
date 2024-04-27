@@ -1,13 +1,61 @@
+@font-face{
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format(truetype);
+}
+
+
 *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
 }
 .container{
     width: 1440px;
     margin:0 auto;
 }
+.container .row{
+    width: 1160px;
+    margin:0 auto;
+}
 .container .hero{
-    /* background-image: url("images/hero_bg.png"); */
-    background-color: gray;
+    background-image: url("../images/hero_bg.png");
+}
+.container .row header {
+    padding-top:50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.container .row header .header__logo a{
+    display: flex;
+    align-content: center;
+}
+.container .row header .header__logo a span{
+    line-height: 54px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+.container .row header .header__nav{
+    line-height: 54px;
+}
+.container .row header .header__nav ul{
+    display: flex;
+    list-style: none;
+}
+.container .row header .header__nav ul li a{
+    font-family: "Poppins";
+    color:#89939E;
+    margin-left:40px;
+}
+.container .row header .header__nav ul li .active{
+    color:#ffffff;
+    font-weight: 600;
+}
+.container .row header .header__login {
+    line-height: 54px;
 }
