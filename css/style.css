@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 .container{
-    width: 1680px;
-    
+    width: 1440px;
+}
+.container .hero{
+    background-image: url("images/hero_bg.png");
 }
