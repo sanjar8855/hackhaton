@@ -9,4 +9,5 @@
 }
 .container .hero{
     /* background-image: url("images/hero_bg.png"); */
+    background-color: gray;
 }
