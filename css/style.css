@@ -492,3 +492,34 @@ footer{
     right: 50px;
     bottom: 50px;
 }
+.content__header{
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+}
+.content__header .content__header-author{
+    display: flex;
+    justify-content: space-between;
+}
+.content__header-author .author-info{
+    margin:5px 15px;
+}
+.content__header .content__header-side{
+    margin-top:10px;
+    color:#697586;
+}
+.content .content__body{
+    margin:15px 5px;
+}
+.content .content__body .content__body-hero{
+    display: flex;
+}
+.content .content__body .content__body-hero .content__body-info{
+    margin:5px 50px;
+}
+.content .content__body .content__body-hero .content__body-info .body__info-text{
+    margin-top:10px;
+}
+.content .content__body .content__body-text{
+    margin:30px 5px;
+}
